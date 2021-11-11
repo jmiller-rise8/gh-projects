@@ -10,13 +10,14 @@ USAGE
 
 COMMANDS
   list:       List projects owned by user or organization
+  view:       View project owned by user or organization by name or title
 
 FLAGS
   --help, -h  Show help for command
 
 EXAMPLES
   $ gh projects list org
-  $ gh projects list user --beta
+  $ gh projects view user
 
 LEARN MORE
   Use 'gh projects <command> --help' for more information about a command.
@@ -26,9 +27,10 @@ EOF
 
 BASEDIR=$(dirname "$0")
 
-if [ $1 == list ]; then
+if [ $1 == list ] || [ $1 == view ]; then
+  command=$1
   shift
-  exec $BASEDIR/command/list.sh "$@"
+  exec $BASEDIR/command/$command.sh "$@"
 fi
 
 while [ $# -gt 0 ]; do

@@ -15,13 +15,14 @@ USAGE
   
 COMMANDS
   list:       List projects owned by user or organization
+  view:       View project owned by user or organization by name or title
   
 FLAGS
   --help, -h  Show help for command
 
 EXAMPLES
   $ gh projects list org
-  $ gh projects list user --beta
+  $ gh projects view user
 
 LEARN MORE
   Use 'gh projects <command> --help' for more information about a command.
