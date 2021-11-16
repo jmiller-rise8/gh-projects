@@ -16,11 +16,11 @@ FLAGS
   --help, -h  Show help for command
 
 EXAMPLES
-  $ gh projects view org
-  $ gh projects view user --beta
+  $ gh projects view org test-project
+  $ gh projects view user test-project --beta
 
 LEARN MORE
-  Use 'gh projects view <command> --help' for more information about a command.
+  Use 'gh projects view <command> [title] --help' for more information about a command.
   Read the documentation at https://github.com/jnmiller-va/gh-projects
 EOF
 }

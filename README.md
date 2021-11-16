@@ -22,7 +22,7 @@ FLAGS
 
 EXAMPLES
   $ gh projects list org
-  $ gh projects view user
+  $ gh projects view user test-project
 
 LEARN MORE
   Use 'gh projects <command> --help' for more information about a command.

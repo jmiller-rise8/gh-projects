@@ -6,18 +6,18 @@ help() {
 Work seamlessly with GitHub Projects from the command line.
 
 USAGE
-  gh projects list user [<title>] [flags]
+  gh projects view user [<title>] [flags]
 
 FLAGS
   --help, -h  Show help for command
   --beta      Show beta projects
 
 EXAMPLES
-  $ gh projects view user test-project
-  $ gh projects list user test-project --beta
+  $ gh projects view user project-title
+  $ gh projects view user project-title --beta
 
 LEARN MORE
-  Use 'gh projects list user --help' for more information about a command.
+  Use 'gh projects view user --help' for more information about a command.
   Read the documentation at https://github.com/jnmiller-va/gh-projects
 EOF
 }
